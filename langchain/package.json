@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config -r ts-node/register src/basicrag/PDFLoader.ts",
+    "start": "node -r dotenv/config -r ts-node/register src/basicrag/ChromaDB.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +14,8 @@
     "@langchain/community": "^0.2.32",
     "axios": "^1.7.7",
     "cheerio": "^1.0.0",
+    "chroma": "^0.0.1",
+    "chromadb": "^1.8.1",
     "langchain": "^0.2.18"
   },
   "devDependencies": {
