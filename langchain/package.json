@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config -r ts-node/register src/basicrag/Starter.ts",
+    "start": "node -r dotenv/config -r ts-node/register src/basicrag/Cheerio.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +11,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@langchain/community": "^0.2.32",
+    "cheerio": "^1.0.0",
     "langchain": "^0.2.18"
   },
   "devDependencies": {
