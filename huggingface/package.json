@@ -1,0 +1,24 @@
+{
+  "name": "huggingface",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config -r ts-node/register src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@huggingface/agents": "^0.0.5",
+    "@huggingface/hub": "^0.15.2",
+    "@huggingface/inference": "^2.8.0",
+    "openai": "^4.58.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
