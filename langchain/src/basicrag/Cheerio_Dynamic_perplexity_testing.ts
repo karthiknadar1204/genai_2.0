@@ -30,15 +30,13 @@ const googleSearch = async (query: string): Promise<SearchResult[]> => {
       results.push({ title, link, snippet });
     }
   });
-  return results.slice(0, 5); // Return top 5 results
+  return results.slice(0, 5);
 };
 
 const main = async (query: string): Promise<void> => {
   try {
-    // Fetch search results
     const searchResults = await googleSearch(query);
     
-    // Prepare documents from search results
     const docs: Document[] = searchResults.map(result => new Document({
       pageContent: `${result.title}\n${result.snippet}`,
       metadata: { source: result.link }
@@ -89,5 +87,5 @@ const main = async (query: string): Promise<void> => {
   }
 };
 
-const userQuery = "tell me something about dhoni?";
+const userQuery = "calculate the value of 10896*234675 and then divide it by 12443?";
 main(userQuery).catch(console.error);
